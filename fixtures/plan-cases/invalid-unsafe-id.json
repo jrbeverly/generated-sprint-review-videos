@@ -1,0 +1,11 @@
+{
+  "note": "Invalid case: demo IDs become filenames, so a path-traversing ID must fail before any output is written.",
+  "demos": [
+    {
+      "id": "../admin-controls",
+      "title": "Unsafe ID Demo",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484"
+    }
+  ]
+}

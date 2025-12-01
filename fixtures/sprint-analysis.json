@@ -1,0 +1,25 @@
+{
+  "note": "Presentation plan for the #428 beat/artifact-metadata stage. PDF follows PPTX inclusion: the vision defines no separate PDF switch, so a demo included in PPTX also appears in PDF. Demos are declared on the one local master recording (input/sprint-demo.mp4) with explicit ranges; nothing is discovered. include_in_pptx and include_in_video default to true when absent. Opening and closing beats use the fixed texts in src/build_plan.py.",
+  "pdf_follows_pptx": true,
+  "demos": [
+    {
+      "id": "new-checkout",
+      "title": "New Checkout Experience",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484",
+      "epic": "Checkout Modernization",
+      "release": "2026.08",
+      "business_value": "Reduced purchase friction",
+      "intro": "The first release this sprint was the redesigned checkout experience.",
+      "outro": "This removes two steps from the most common purchase path."
+    },
+    {
+      "id": "admin-controls",
+      "title": "Administrative Controls",
+      "start": "00:00:09.623",
+      "end": "00:00:14.202",
+      "epic": "Enterprise Administration",
+      "intro": "Next, the administrative controls now support bulk updates."
+    }
+  ]
+}

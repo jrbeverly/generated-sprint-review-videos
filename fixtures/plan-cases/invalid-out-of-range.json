@@ -1,0 +1,11 @@
+{
+  "note": "Invalid case: an end beyond the measured 16 s source duration must fail before any output is written.",
+  "demos": [
+    {
+      "id": "late-demo",
+      "title": "Late Demo",
+      "start": "00:00:14.000",
+      "end": "00:00:17.000"
+    }
+  ]
+}

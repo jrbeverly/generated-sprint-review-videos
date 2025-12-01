@@ -1,0 +1,17 @@
+{
+  "note": "Invalid case: duplicate demo IDs must fail before any output is written.",
+  "demos": [
+    {
+      "id": "dup-demo",
+      "title": "First Declaration",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484"
+    },
+    {
+      "id": "dup-demo",
+      "title": "Second Declaration",
+      "start": "00:00:09.623",
+      "end": "00:00:14.202"
+    }
+  ]
+}

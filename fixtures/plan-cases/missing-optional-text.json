@@ -1,0 +1,11 @@
+{
+  "note": "Case: a demo with no intro and no outro produces only its demo beat between opening and closing.",
+  "demos": [
+    {
+      "id": "plain-demo",
+      "title": "Plain Demo",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484"
+    }
+  ]
+}

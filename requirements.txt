@@ -1,0 +1,16 @@
+# Python dependencies for the media-path spike (#430), the local Kokoro
+# narration stage (#429), and the static rendering validation (#431, pypdf
+# extracts PDF text). Installed into the experiment-local .venv (gitignored).
+# The torch +cpu wheel comes from the PyTorch CPU index so no CUDA runtime is
+# pulled in.
+--extra-index-url https://download.pytorch.org/whl/cpu
+Pillow==11.3.0
+kokoro==0.9.4
+torch==2.7.1+cpu
+misaki==0.9.4
+phonemizer-fork==3.3.2
+espeakng-loader==0.2.4
+numpy==2.2.6
+spacy==3.8.6
+transformers==5.17.0
+pypdf==6.18.1

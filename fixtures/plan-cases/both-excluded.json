@@ -1,0 +1,21 @@
+{
+  "note": "Case: a demo excluded from both outputs is omitted from every beat list and never extracted.",
+  "demos": [
+    {
+      "id": "skipped",
+      "title": "Skipped Demo",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484",
+      "include_in_pptx": false,
+      "include_in_video": false,
+      "intro": "This must never appear.",
+      "outro": "Neither must this."
+    },
+    {
+      "id": "shown",
+      "title": "Shown Demo",
+      "start": "00:00:09.623",
+      "end": "00:00:14.202"
+    }
+  ]
+}

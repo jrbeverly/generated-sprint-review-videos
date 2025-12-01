@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Fixed static layout for the #431 slide/PDF renderer.
+
+     One 1920x1080 (16:9) canvas, one local font (Roboto, inlined as woff2
+     data URIs by make_static.mjs — no network, no system font), no animation,
+     no transitions, no template engine. The only slot is __CONTENT__: the
+     renderer replaces it with one fixed structure per beat kind (narrated
+     slide or demo card). The @page rule makes Chromium print every .page
+     block as one 20in x 11.25in (16:9) PDF page, so the PDF is generated
+     directly from this layout.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sprint briefing</title>
+<style>
+/*__FONTS_BEGIN__*/
+@font-face { font-family: 'Roboto Local'; font-style: normal; font-weight: 400; src: url('__FONT_400__') format('woff2'); }
+@font-face { font-family: 'Roboto Local'; font-style: normal; font-weight: 700; src: url('__FONT_700__') format('woff2'); }
+/*__FONTS_END__*/
+
+@page { size: 20in 11.25in; margin: 0; }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: #ffffff; }
+body { font-family: 'Roboto Local', sans-serif; color: #1f2937; }
+.page { width: 1920px; height: 1080px; padding: 96px 120px; page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+
+/* Printing: the fixed 1920x1080 screen canvas must not clip the flowing page
+   blocks; each .page (1920x1080px == 20x11.25in) breaks onto one 16:9 page. */
+@media print {
+  html, body { width: auto; height: auto; overflow: visible; }
+}
+
+.kicker { font-size: 28px; font-weight: 700; letter-spacing: 4px; text-transform: uppercase; color: #1f3864; margin-bottom: 24px; }
+.headline { font-size: 64px; font-weight: 700; line-height: 1.2; color: #1f2937; max-width: 1680px; }
+
+.card { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.poster { width: 1120px; height: 630px; object-fit: cover; margin-bottom: 36px; }
+.card-title { font-size: 56px; font-weight: 700; line-height: 1.2; color: #1f3864; margin-bottom: 12px; }
+.epic { font-size: 32px; font-weight: 400; color: #6b7280; margin-bottom: 4px; }
+.duration { font-size: 32px; font-weight: 400; color: #6b7280; }
+</style>
+</head>
+<body>
+__CONTENT__
+</body>
+</html>

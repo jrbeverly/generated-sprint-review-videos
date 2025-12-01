@@ -1,0 +1,11 @@
+# Experiment-owned dependencies (pinned via package.json / requirements.txt;
+# Kokoro model/voice assets are sha256-pinned in setup.sh)
+node_modules/
+.venv/
+__pycache__/
+assets/
+
+# Generated media and outputs (regenerable via validate.sh)
+input/
+work/
+output/

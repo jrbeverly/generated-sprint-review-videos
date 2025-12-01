@@ -1,0 +1,20 @@
+{
+  "note": "Case: include_in_video false keeps the demo's beats in pptx/pdf only; the clip and poster are still extracted.",
+  "demos": [
+    {
+      "id": "deck-only",
+      "title": "Deck Only Demo",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484",
+      "include_in_video": false,
+      "intro": "This demo appears only in the deck.",
+      "outro": "It is skipped by the video timeline."
+    },
+    {
+      "id": "both-demo",
+      "title": "Both Outputs Demo",
+      "start": "00:00:09.623",
+      "end": "00:00:14.202"
+    }
+  ]
+}

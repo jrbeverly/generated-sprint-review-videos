@@ -1,0 +1,31 @@
+{
+  "fps": 30,
+  "source_duration_seconds": 16.0,
+  "note": "Synthetic masters are 16 s (480 frames, 4 scenes of 4 s). Video GOP is forced to 250 frames, so these boundaries are provably not keyframe-aligned. Each demo crosses one scene boundary on purpose.",
+  "demos": [
+    {
+      "id": "new-checkout",
+      "title": "New Checkout Experience",
+      "start": "00:00:02.317",
+      "end": "00:00:07.484",
+      "source": "sprint-demo.mp4",
+      "note": "Spans scenes 0/1 (boundary at 00:00:04.000); boundary frames not aligned to 1/30 s either."
+    },
+    {
+      "id": "admin-controls",
+      "title": "Administrative Controls",
+      "start": "00:00:09.623",
+      "end": "00:00:14.202",
+      "source": "sprint-demo.mp4",
+      "note": "Spans scenes 2/3 (boundary at 00:00:12.000)."
+    },
+    {
+      "id": "silent-demo",
+      "title": "Silent Source Case",
+      "start": "00:00:01.417",
+      "end": "00:00:06.929",
+      "source": "silent-demo.mp4",
+      "note": "Silent-source case: identical video with a digital-silence audio track. Exercises audio preservation when the source carries silence."
+    }
+  ]
+}

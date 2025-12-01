@@ -1,0 +1,11 @@
+{
+  "note": "Invalid case: reversed timestamps (start after end) must fail before any output is written.",
+  "demos": [
+    {
+      "id": "reversed-demo",
+      "title": "Reversed Demo",
+      "start": "00:00:08.000",
+      "end": "00:00:03.000"
+    }
+  ]
+}
